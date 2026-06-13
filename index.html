@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drex Script Hub</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <div class="badge">
+     ROBLOX SCRIPT
+  </div>
+
+  <h1>Drex <span>Script Hub</span></h1>
+
+  <p class="subtitle">
+    Select a game to get the script — copy with one click.
+  </p>
+
+  <div class="card">
+
+    <img src="noFilter.webp" alt="Game">
+
+    <div class="content">
+
+      <div class="tag">
+        SIMULATOR
+      </div>
+
+      <h2>Grow A Garden 2</h2>
+
+      <p>
+        Auto farm, auto collect, speed hack and many other powerful features.
+      </p>
+
+      <button class="getBtn" onclick="openPopup()">
+        Get Script
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+<div class="popup" id="popup">
+
+  <div class="popupBox">
+
+    <div class="top">
+
+      <h2>🌱 Grow A Garden 2</h2>
+
+      <button class="closeBtn" onclick="closePopup()">
+        ✕
+      </button>
+
+    </div>
+
+    <p class="copytitle">
+      SCRIPT — COPY & PASTE INTO YOUR EXECUTOR
+    </p>
+
+    <div class="codeBox">
+
+      <code id="scriptText">
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AdoptmeKeyless/DevX/refs/heads/main/Adoptme"))()
+      </code>
+
+    </div>
+
+    <button class="copyMain" onclick="copyScript()">
+      📄 Copy Script
+    </button>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
